@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "fzjl";
+  src: url("../font/fzjl.TTF");
+  font-weight: normal;
+  font-style: normal; }
+body * {
+  box-sizing: border-box; }
+
+#slide {
+  width: 5.6rem;
+  height: 0.53333rem;
+  position: absolute;
+  left: 0.42667rem;
+  top: 0.26667rem;
+  z-index: 1;
+  background: url("../img/label_slide.png") no-repeat;
+  background-size: contain;
+  overflow: hidden; }
+  #slide #slideList {
+    width: 100%;
+    font-size: 0.32rem;
+    line-height: 0.53333rem;
+    overflow: hidden;
+    text-indent: 0.21333rem; }
+    #slide #slideList li {
+      min-width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      color: #EABE75; }
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; }
+
+#broadcast {
+  width: 7.56rem;
+  height: 8.74667rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -3.64667rem;
+  margin-top: -4.37333rem;
+  z-index: 3;
+  background: url("../img/bg_broadcast.png") no-repeat;
+  background-size: contain; }
+  #broadcast .bText {
+    color: #000000; }
+  #broadcast .rText {
+    color: #ff0000; }
+  #broadcast .gText {
+    color: #16b11a; }
+  #broadcast #date {
+    width: 100%;
+    height: 0.34667rem;
+    line-height: 0.34667rem;
+    margin-top: 2.34667rem;
+    text-align: right;
+    padding-right: 0.90667rem;
+    font-size: 0.16rem;
+    font-weight: bold;
+    line-height: 0.34667rem; }
+  #broadcast .write {
+    width: 70%;
+    overflow: hidden;
+    margin: 0 15%; }
+    #broadcast .write span {
+      font-family: 'fzjl';
+      font-size: 0.37333rem;
+      font-weight: bold;
+      line-height: 0.66667rem; }
+  #broadcast #warn {
+    margin-top: 0.26667rem;
+    text-align: center; }
+  #broadcast #showSF {
+    width: 100%;
+    text-align: center;
+    margin: 0; }
+
+/*# sourceMappingURL=investMagnate.css.map */

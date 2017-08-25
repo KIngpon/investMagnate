@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <meta name="keywords" content="投资大亨">
+    <meta name="description" content="投资大亨">
+    <title>投资大亨</title>
+    <meta name='viewport'
+          content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'/>
+    <meta name='apple-mobile-web-app-capable' content='yes'/>
+    <meta name='full-screen' content='true'/>
+    <meta name='screen-orientation' content='portrait'/>
+    <meta name='x5-fullscreen' content='true'/>
+    <meta name='360-fullscreen' content='true'/>
+    <meta http-equiv='expires' content='0'/>
+    <link rel="stylesheet" href="../../commonVendor/css/cssreset.min.css">
+    <link rel="stylesheet" href="./gameRes/css/investMagnate.css">
+    <script type="text/javascript" src="../../commonVendor/vendor/zepto.min.js"></script>
+    <script type="text/javascript" src="../../commonVendor/vendor/felx.js"></script>
+    <script type="text/javascript" src="../../commonVendor/vendor/moment.js"></script>
+    <script type="text/javascript" src="gameRes/vendor/typewriting.min.js"></script>
+</head>
+<body>
+<!-- Protobuf -->
+<!--<script type="text/javascript" src="libs/min/min/bytebuffer.fontn.js"></script>
+<script type="text/javascript" src="libs/min/protobuf.fontn.js"></script>
+-->
+<div id="slide">
+    <ul id="slideList"></ul>
+</div>
+<div class="mask">
+    <div id="broadcast">
+        <div id="date" class="bText"></div>
+        <div id="typeWrite">
+            <div class="write">
+                <span class="bText" id="boss"></span>
+                <span class="bText" id="hText"></span>
+            </div>
+            <div class="write">
+                <span class="bText" id="fIndex"></span>
+                <span class="bText" id="fLoad"></span>
+                <span class="gText" id="fBus"></span>
+                <span class="bText" id="fText"></span>
+            </div>
+            <div class="write">
+                <span class="bText" id="sIndex"></span>
+                <span class="gText" id="sBus"></span>
+                <span class="bText" id="sText"></span>
+            </div>
+            <div class="write">
+                <span class="bText" id="tIndex"></span>
+                <span class="bText" id="tLoad"></span>
+                <span class="gText" id="tBus"></span>
+                <span class="bText" id="tText"></span>
+            </div>
+            <div class="write" id="warn">
+                <span class="gText" id="warnText"></span>
+            </div>
+            <div class="write" id="showSF">
+                <span class="bText" id="cIndex"></span>
+                <span class="bText" id="cNum"></span>
+                <span class="bText" id="cText"></span>
+            </div>
+        </div>
+        <div id="showConR"></div>
+        <div id="runCir"></div>
+    </div>
+</div>
+
+<!--核心包，封装了显示对象渲染，事件，时间管理，时间轴动画，缓动，消息交互,socket，本地存储，鼠标触摸，声音，加载，颜色滤镜，位图字体等-->
+<script type="text/javascript" src="libs/min/laya.core.min.js"></script>
+<!--封装了webgl渲染管线，如果使用webgl渲染，可以在初始化时调用Laya.init(1000,800,laya.webgl.WebGL);-->
+<script type="text/javascript" src="libs/min/laya.webgl.min.js"></script>
+<!--是动画模块，包含了swf动画，骨骼动画等-->
+<script type="text/javascript" src="libs/min/laya.ani.min.js"></script>
+<!--包含更多webgl滤镜，比如外发光，阴影，模糊以及更多-->
+<script type="text/javascript" src="libs/min/laya.filter.min.js"></script>
+<!--封装了html动态排版功能-->
+<script type="text/javascript" src="libs/min/laya.html.min.js"></script>
+<!--&lt;!&ndash;粒子类库&ndash;&gt;-->
+<!--<script type="text/javascript" src="libs/min/laya.particle.min.js"></script>-->
+<!--提供tileMap解析支持-->
+<script type="text/javascript" src="libs/min/laya.tiledmap.min.js"></script>
+<!--提供了制作UI的各种组件实现-->
+<script type="text/javascript" src="libs/min/laya.ui.min.js"></script>
+
+<!-- 物理引擎matter.fontn.js -->
+<!--<script type="text/javascript" src="libs/min/matter.fontn.js"></script>
+<script type="text/javascript" src="libs/min/matter-RenderLaya.fontn.js"></script>-->
+<!--自定义的js(src文件夹下)文件自动添加到下面jsfile模块标签里面里，js的顺序可以手动修改，修改后保留修改的顺序，新增加的js会默认依次追加到标签里-->
+<!--删除标签，ide不会自动添加js文件，请谨慎操作-->
+
+<script src="../src/ui/layaUI.max.all.js"></script>
+<!--jsfile--startTag-->
+<script src="../src/HotDialog.js"></script>
+<script src="../src/GameView.js"></script>
+<script src="../src/Game.js"></script>
+<!--jsfile--endTag-->
+</body>
+</html>
